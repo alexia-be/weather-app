@@ -1,1 +1,29 @@
+<!--  <!DOCTYPE html> and <html> tell the browser this is an HTML5 page. -->
+<!DOCTYPE html>
+<html lang="en">
+<!-- <head> holds information about the page: its title, character encoding, mobile settings, and the link to your CSS file -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- <main class="card"> wraps everything. The class is a label we'll use to style it. -->
+  <main class="card">
+    <h1>Weather App</h1>
 
+    <div class="search">
+      <!-- <input> is the text box. The id="city-input" is a unique name so JavaScript can find it. -->
+      <input type="text" id="city-input" placeholder="Enter a city...">
+      <!-- <button id="search-btn"> is the search button, with its own id. -->
+      <button id="search-btn">Search</button>
+    </div>
+    <!-- <div id="result"> is an empty box where we'll display the weather. -->
+    <div id="result"></div>
+  </main>
+
+  <!-- <script src="script.js"> loads your JavaScript. It sits at the bottom so the page elements exist before the script runs. -->
+  <script src="script.js"></script>
+</body>
+</html>
